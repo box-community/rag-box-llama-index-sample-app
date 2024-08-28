@@ -81,7 +81,7 @@ def main():
     )
 
     text_chunks = []
-    # maintain relationship with source doc index, to help inject doc metadata in (3)
+    # maintain relationship with source doc index, to help inject doc metadata
     doc_indexes = []
     for doc_idx, doc in enumerate(documents):
         cur_text_chunks = text_parser.split_text(doc.text)
