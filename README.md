@@ -14,8 +14,7 @@ The repository includes two main scripts:
 
 ## Requirements
 
-To run the code, ensure you have the following dependencies installed.
-You can install these dependencies using `pip`:
+To run the code, you can do the following:
 
 ```bash
 python3.12 -m venv .venv
