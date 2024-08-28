@@ -2,6 +2,10 @@
 
 This repository contains two Python scripts that demonstrate how to build a document query and retrieval system using `ChromaDB` as a vector store and `HuggingFace` or `Llama-CPP` models for embeddings and language modeling. The system leverages Box's text extraction capability to load documents, embeds them using a HuggingFace model, and queries them using a retrieval pipeline to provide relevant responses based on the input query.
 
+It essentially follows the examples provide by Llama-Index in their documentation:
+- [Chroma](https://docs.llamaindex.ai/en/stable/examples/vector_stores/ChromaIndexDemo/)
+- [Building RAG from Scratch](https://docs.llamaindex.ai/en/stable/examples/low_level/oss_ingestion_retrieval/)
+
 ## Overview
 
 The repository includes two main scripts:
