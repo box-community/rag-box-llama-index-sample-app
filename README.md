@@ -1,1 +1,1 @@
-# rag-box-llama-index-sample-app
+# Box and Llama-Index sample RAG application
