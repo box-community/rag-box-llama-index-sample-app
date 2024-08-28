@@ -6,10 +6,10 @@ This repository contains two Python scripts that demonstrate how to build a docu
 
 The repository includes two main scripts:
 
-1. **Script 1: Simple Document Query System using ChromaDB**  
+1. **SimpleChroma.py: Simple Document Query System using ChromaDB**  
    This script sets up a basic document query system using `ChromaDB` for vector storage and a HuggingFace model for embeddings. It loads documents from Box, creates embeddings, stores them in a vector database, and uses an OpenAI model to query the database.
 
-2. **Script 2: Advanced Document Query System with Llama-CPP**  
+2. **NodesChroma.py: Advanced Document Query System with Llama-CPP**  
    This script builds upon the first by adding a more advanced retrieval pipeline that leverages `Llama-CPP` for natural language processing and retrieval query synthesis. It includes features like text splitting, embedding generation, node construction, and an enhanced retrieval process.
 
 ## Requirements
@@ -18,6 +18,8 @@ To run the code, ensure you have the following dependencies installed.
 You can install these dependencies using `pip`:
 
 ```bash
+python3.12 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -79,7 +81,7 @@ If you become distressed on the surface during scuba diving, the appropriate act
 ```
 
 ```bash
-python script2.py
+python NodesChroma.py
 ```
 
 Sample Output:
