@@ -3,7 +3,7 @@ import chromadb
 
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.vector_stores.chroma import ChromaVectorStore
-from llama_index.readers.box import BoxReaderTextExtraction
+from llama_index.readers.box import BoxReader, BoxReaderTextExtraction
 
 from llama_index.llms.llama_cpp import LlamaCPP
 from llama_index.core.node_parser import SentenceSplitter
@@ -26,8 +26,14 @@ def main():
 
     # Load data using a Box reader
     box_client = get_box_client()
+
+    # Using BoxReaderTextExtraction
     box_reader = BoxReaderTextExtraction(box_client)
     documents = box_reader.load_data(file_ids=[app_config.get("DEMO_DOC_ID")])
+
+    # # Using BoxReader
+    # box_reader = BoxReader(box_client)
+    # documents = box_reader.load_data(file_ids=[app_config.get("DEMO_DOC_ID")])
 
     # Document metadata workaround
     # TODO: Fix this in the BoxReader API
